@@ -1,0 +1,23 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+/*
+	@TheTusharPandey | thetusharpandey.github.io
+*/
+
+/* Page */
+
+	body {
+		overflow-x: scroll;
+	}
+
+/* Wrapper */
+
+	#wrapper {
+		body.is-preload & {
+			@include vendor('transform', 'none');
+			opacity: 1;
+		}
+	}
